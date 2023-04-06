@@ -1,0 +1,13 @@
+.logo {
+  display: block;
+  text-align: center;
+  fill: $basic_gold;
+  stroke: $basic_brown;
+  stroke-width: 0.8;
+  transition: fill 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    fill: #ffffff;
+  }
+}

@@ -1,0 +1,10 @@
+.lead {
+  margin: 0;
+  color: $basic_gold;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}

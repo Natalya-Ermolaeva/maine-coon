@@ -1,0 +1,232 @@
+.reviews {
+  background-color: $basic_brown;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 87px;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 135px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
+}
+
+.reviews__list {
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 578px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 640px;
+    margin: 0 auto;
+    transform: translate(220px);
+  }
+}
+
+.reviews__item {
+  position: relative;
+}
+
+.reviews__img-wrapper {
+  position: absolute;
+  width: 100%;
+  top: -83px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 482px;
+    top: -104px;
+    left: calc(50% - 241px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 481px;
+    top: 45px;
+    left: -381px;
+  }
+}
+
+.reviews__img {
+  width: 242px;
+  height: 166px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 302px;
+    height: 208px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 481px;
+    height: 331px;
+  }
+}
+
+.reviews__img img {
+  @media (min-width: $tablet-width) {
+    width: 302px;
+    height: 208px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 481px;
+    height: 331px;
+  }
+}
+
+.reviews__slider-button {
+  @media (min-width: $tablet-width) {
+    width: 59px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: opacity 0.3s ease-out;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__slider-button--prev {
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/arrow-prev-long.svg);
+    top: 140px;
+}
+}
+
+.reviews__slider-button--next {
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/arrow-next-long.svg);
+    top: 140px;
+  }
+}
+
+.reviews__content-wrapper {
+  background-color: $basic_dark-brown;
+  padding-top: 115px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_dark;
+    padding-top: 148px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
+    padding-bottom: 100px;
+  }
+}
+
+.reviews__content {
+  margin: 0;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_dark;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-left: 145px;
+  }
+}
+
+.reviews__item-title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.reviews__item-text {
+  color: rgba($basic_white, 0.72);
+  margin-bottom: 19px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.reviews__social-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 178px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 145px;
+  }
+}
+
+.reviews__time {
+  font-weight: normal;
+  font-size: 12px;
+  color: $basic_gold;
+
+  @media (min-width: $tablet-width) {
+    line-height: 19px;
+  }
+
+}
+
+.rewiews__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $basic_gold;
+  width: 28px;
+  height: 28px;
+  transition: border-color 0.3s ease-out;
+
+  &:hover {
+    border-color: $basic_white;
+  }
+
+  &:hover .reviews__icon {
+    fill: $basic_white;
+  }
+ }
+
+.reviews__icon {
+  fill: $basic_gold;
+}

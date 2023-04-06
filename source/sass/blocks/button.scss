@@ -1,0 +1,32 @@
+.button {
+  display: block;
+  width: 141px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: $basic_white;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid $basic_gold;
+  background-color: transparent;
+  padding: 12px;
+  transition: color 0.3s ease-out, border 0.3s ease-out;
+
+    &:hover,
+    &:focus {
+    color: $basic_gold;
+    border: 1px solid $basic_white;
+  }
+    &:active {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 16px;
+    width: 200px;
+    padding: 18px;
+  }
+}
